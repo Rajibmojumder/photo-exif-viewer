@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-50 min-h-screen;
+  }
+}
+
+.glass-effect {
+  @apply bg-white/70 backdrop-blur-lg;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg 
+         hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 
+         shadow-lg hover:shadow-xl font-medium;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Custom Leaflet Popup Styles */
+.leaflet-popup-content-wrapper {
+  @apply rounded-lg shadow-lg overflow-hidden p-0;
+}
+
+.leaflet-popup-content {
+  @apply m-0;
+}
+
+.leaflet-popup-close-button {
+  @apply !p-2 !text-gray-500 hover:!text-gray-700;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  @apply bg-white/95 backdrop-blur-sm;
+}
